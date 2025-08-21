@@ -1,0 +1,16 @@
+# config.yaml | Configuration for the VizWiz dataset download pipeline
+
+dataset:
+  # URLs for each component of the VizWiz dataset
+  urls:
+    annotations: "https://vizwiz.cs.colorado.edu/VizWiz_final/caption/annotations.zip"
+    train_images: "https://vizwiz.cs.colorado.edu/VizWiz_final/images/train.zip"
+    val_images: "https://vizwiz.cs.colorado.edu/VizWiz_final/images/val.zip"
+    test_images: "https://vizwiz.cs.colorado.edu/VizWiz_final/images/test.zip"
+
+  # Local directory structure for saving and organizing the dataset
+  paths:
+    base_dir: "./fine-tune/dataset/vizwiz"
+    temp_zip_dir: "./fine-tune/dataset/vizwiz/zips"
+    images_dir: "./fine-tune/dataset/vizwiz/images"
+    annotations_dir: "./fine-tune/dataset/vizwiz/annotations"

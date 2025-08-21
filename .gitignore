@@ -225,5 +225,8 @@ stAPP/tts_output/*
 stAPP/sightGuide.ipynb
 stAPP/sightGuide_Simple.ipynb
 stAPP/sightGuide_Simple.py
+stAPP/gemma3_local.py
+stAPP/gemma3_local_audio_input.py
+fine-tune/dataset/*
 hello.py
 
