@@ -228,5 +228,11 @@ stAPP/sightGuide_Simple.py
 stAPP/gemma3_local.py
 stAPP/gemma3_local_audio_input.py
 fine-tune/dataset/*
+fine-tune/data_pipeline/download_data.py
+fine-tune/data_pipeline/fix_paths.py
+fine-tune/data_pipeline/prepare_dataset.py
+fine-tune/run_pipeline.py
+fine-tune/test.py
+fine-tune/models/*
 hello.py
 

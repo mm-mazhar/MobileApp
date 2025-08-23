@@ -10,7 +10,15 @@ dataset:
 
   # Local directory structure for saving and organizing the dataset
   paths:
-    base_dir: "./fine-tune/dataset/vizwiz"
-    temp_zip_dir: "./fine-tune/dataset/vizwiz/zips"
-    images_dir: "./fine-tune/dataset/vizwiz/images"
-    annotations_dir: "./fine-tune/dataset/vizwiz/annotations"
+    base_dir: "fine-tune/dataset/vizWiz_v1"
+    temp_zip_dir: "fine-tune/dataset/vizWiz_v1/zips"
+    images_dir: "fine-tune/dataset/vizWiz_v1/images"
+    annotations_dir: "fine-tune/dataset/vizWiz_v1/annotations"
+    processed_dir: "fine-tune/dataset/vizWiz_v1/processed_for_tuning"
+
+fine-tune:
+  model_name: "google/gemma-3n-e2b-it" # `google/gemma-3-27-pt`
+  dataset_path: "fine-tune/dataset/vizWiz_v1/processed_for_tuning"
+  adapters_output_dir: "fine-tune/models/gemma/gemma-3n-final-adapters"
+  trainer_output_dir: "fine-tune/models/gemma/training_checkpoints"
+  logging_dir: "fine-tune/logs"
